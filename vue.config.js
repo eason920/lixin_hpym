@@ -7,7 +7,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/lixin_bbb/dist/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/lixin_hpym/dist/' : '/',
   configureWebpack: {
     resolve: {
       alias: {
