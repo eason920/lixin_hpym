@@ -17,30 +17,38 @@
       <S1 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section2" @init="init">
-      <img v-if="!isMobile" class="wave wave_l1" src="../projects/hpym/all/wave_l1.png" />
+      <!-- PC -->
+      <img v-if="!isMobile" :style="pcTop1" class="wave wave_l1" src="../projects/hpym/all/wave_l1.png" />
       <S2 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section3" @init="init">
-      <img class="wave wave_r1" src="../projects/hpym/all/wave_r1.png" />
-      <img v-if="isMobile" class="wave wave_l1" src="../projects/hpym/all/wave_l1.png" />
+      <!-- PC -->
+      <img v-if="!isMobile" class="wave wave_r1" :style="pcTop2" src="../projects/hpym/all/wave_r1.png" />
+      <!-- MB -->
+      <img v-if="isMobile" class="wave wave_l1" :style="mbTop1" src="../projects/hpym/all/wave_l1.png" />
+      <img v-if="isMobile" class="wave wave_r1" :style="mbTop2" src="../projects/hpym/all/wave_r1.png" />
       <S3 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section4" @init="init">
-      <img v-if="!isMobile" class="wave wave_l2" src="../projects/hpym/all/wave_l2.png" />
       <S4 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section5" @init="init">
-      <img v-if="!isMobile" class="wave wave_r2" src="../projects/hpym/all/wave_r2.png" />
-      <img v-else class="wave wave_l2" src="../projects/hpym/all/wave_l2.png" />
+      <!-- PC -->
+      <img v-if="!isMobile" :style="pcTop3" class="wave wave_l2" src="../projects/hpym/all/wave_l2.png" />
+      <img v-if="!isMobile" :style="pcTop4" class="wave wave_r2" src="../projects/hpym/all/wave_r2.png" />
+      <!-- MB -->
+      <img v-if="isMobile" class="wave wave_l2" :style="mbTop3" src="../projects/hpym/all/wave_l2.png" />
       <S5 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section6" @init="init">
-      <img v-if="isMobile" class="wave wave_r1" src="../projects/hpym/all/wave_r1.png" />
+      <!-- MB -->
+      <img v-if="isMobile" class="wave wave_r1" :style="mbTop4" src="../projects/hpym/all/wave_r1.png" />
       <S6 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section7" @init="init">
-      <img v-if="isMobile" class="wave wave_l2" src="../projects/hpym/all/wave_l1.png" />
-      <img v-if="isMobile" class="wave wave_r2" src="../projects/hpym/all/wave_r1.png" />
+      <!-- MB -->
+      <img v-if="isMobile" class="wave wave_l2" :style="mbTop5" src="../projects/hpym/all/wave_l1.png" />
+      <img v-if="isMobile" class="wave wave_r2" :style="mbTop6" src="../projects/hpym/all/wave_r1.png" />
       <S7 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section8" @init="init">
@@ -100,7 +108,18 @@ export default {
     return {
       isMobile,
       isSide: false,
-      load: true
+      load: true,
+      pcTop1: "",
+      pcTop2: "",
+      pcTop3: "",
+      pcTop4: "",
+      //
+      mbTop1: "",
+      mbTop2: "",
+      mbTop3: "",
+      mbTop4: "",
+      mbTop5: "",
+      mbTop6: "",
     }
   },
   created() {
@@ -124,9 +143,102 @@ export default {
           .on('load', imageLoaded)
           .attr('src', $(img).attr('src'))
       })
+      
+      const fnPcTop1 = ()=>{
+        const h = document.getElementById('section1').offsetHeight;
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -50) + "px";
+        this.pcTop1 = top
+      }
+      const fnPcTop2 = ()=>{
+        const h = document.getElementById('section1').offsetHeight
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -40) + "px";
+        this.pcTop2 = top
+      }
+      const fnPcTop3 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight ) * 2.5
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -55) + "px";
+        this.pcTop3 = top
+      }
+      const fnPcTop4 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight ) + (document.getElementById('section2').offsetHeight ) + (document.getElementById('section3').offsetHeight ) + (document.getElementById('section4').offsetHeight ) 
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -40) + "px";
+        this.pcTop4 = top
+      }
+      // --------------------------------
+      // --------------------------------
+      const fnMbTop1 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight) * 1;
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -30) + "px";
+        this.mbTop1 = top
+      }
+      const fnMbTop2 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight) * 3.5;
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -40) + "px";
+        this.mbTop2 = top
+      }
+      const fnMbTop3 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight) * 3;
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -50) + "px";
+        this.mbTop3 = top
+      }
+      const fnMbTop4 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight) * 3;
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -38) + "px";
+        this.mbTop4 = top
+      }
+      const fnMbTop5 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight) * 4;
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -33) + "px";
+        this.mbTop5 = top
+      }
+      const fnMbTop6 = ()=>{
+        const h = (document.getElementById('section1').offsetHeight) * 7;
+        const st = $(window).scrollTop() + $(window).height();
+        const top= "top:" + (h +st/100 * -42) + "px";
+        this.mbTop6 = top
+      }
+      if( !this.isMobile ) {
+        const action = () => {
+          fnPcTop1();
+          fnPcTop2();
+          fnPcTop3();
+          fnPcTop4();
+        }
+        setTimeout(()=>{
+          action();
+        }, 1000);
+        $(window).scroll(()=>{
+          action();
+        })
+      } else {
+        const action = ()=> {
+          fnMbTop1();
+          fnMbTop2();
+          fnMbTop3();
+          fnMbTop4();
+          fnMbTop5();
+          fnMbTop6();
+        }
+        setTimeout(()=>{
+          action();
+        }, 1000);
+        $(window).scroll(()=>{
+          action();
+        })
+      }
     })
   },
   mounted() {
+
   },
   methods: {
     init() {}
@@ -136,29 +248,10 @@ export default {
 
 <style lang="sass">
 @import "src/assets/style/myvar"
-section
-// background-color: #000
-.wave
-  position: absolute
-  top: -10vh
-.wave_l1, .wave_l2
-  left: 0
-  width: calc(100 * 100vw / 375)
-.wave_r1, .wave_r2
-  right: 0
-  width: calc(172 * 100vw / 375)
 #section8
   background:
     color: #000
 @media screen and (min-width: $bp-pc)
-  .wave
-    top: -10vh
-  .wave_l1, .wave_l2
-    left: 0
-    width: calc(517 * 100vw / 1920)
-  .wave_r1, .wave_r2
-    right: 0
-    width: calc(517 * 100vw / 1920)
   $ga: #141F24
   $gb: #4C7589
   $gc: #649EB9
@@ -167,11 +260,10 @@ section
   #section2
     background:
       image: linear-gradient(to bottom, #000, #{$ga})
-    z-index: 2
+
   #section3
     background:
       image: linear-gradient(to bottom, #{$ga}, #{$gb})
-    z-index: 3
 
   #section4
     background:
@@ -190,8 +282,8 @@ section
   $gb: #5A92AC
   $gc: #031217
   $gd: #031217
+
   #section3
-    padding-top: 1px
     background:
       image: linear-gradient(to bottom, #000 30%, #{$ga})
   #section4
@@ -216,18 +308,57 @@ section
   letter-spacing: 1px
   // Noto Sans CJK TC  粗細Regular 400
   // Noto Serif CJK TC  粗細Regular 400  Bold 700
-
+.wave
+  position: absolute
+.wave_l1, .wave_l2
+  left: 0
+.wave_r1, .wave_r2
+  right: 0
 section
-  overflow: hidden
+  // overflow: visible
   position: relative
-  // min-height: 30vh
 
 @media screen and (min-width: $bp-pc)
-  .wave
-    // height:
+  .wave_l1, .wave_l2
+    left: 0
+    width: calc(517 * 100vw / 1920)
+  .wave_r1, .wave_r2
+    right: 0
+    width: calc(517 * 100vw / 1920)
+
+  // --------------------------------
+  #section2
+    z-index: 2
+    .wave_l1
+  #section3
+    z-index: 3
+    .wave_r1
+  #section5
+    z-index: 1
+    .wave_l2
+    .wave_r2
 @media screen and (max-width: $bp-mb)
-  .wave
-    // height: 43px
+  .wave_l1, .wave_l2
+    left: 0
+    width: calc(100 * 100vw / 375)
+  .wave_r1, .wave_r2
+    right: 0
+    width: calc(172 * 100vw / 375)
+
+  // --------------------------------
+  #section3
+    padding-top: 1px
+    .wave_l1
+    .wave_r1
+  #section5
+    .wave_l2
+      width: 60vw
+  #section6
+    .wave_r1
+  #section7
+    .wave_l2
+      width: 40vw
+    .wave_r2
 </style>
 
 <style lang="scss">

@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/lixin_hpym/dist/js/about.04c35b9e.js"
   },
   {
-    "revision": "838d07337d2b0ff67e69",
-    "url": "/lixin_hpym/dist/css/app.4382c19b.css"
+    "revision": "70f0e8dc76a0e8153d42",
+    "url": "/lixin_hpym/dist/css/app.aa4fb627.css"
   },
   {
-    "revision": "838d07337d2b0ff67e69",
-    "url": "/lixin_hpym/dist/js/app.5c64e062.js"
+    "revision": "70f0e8dc76a0e8153d42",
+    "url": "/lixin_hpym/dist/js/app.831ed1e0.js"
   },
   {
     "revision": "d25da6e714d3b64b7512",
@@ -40,10 +40,6 @@ self.__precacheManifest = [
     "url": "/lixin_hpym/dist/img/1.ed4cca9e.png"
   },
   {
-    "revision": "d985740a871879faedbb0bd3b5bcc2ca",
-    "url": "/lixin_hpym/dist/img/7.d985740a.png"
-  },
-  {
     "revision": "4942a10349fc86ca47acd415b3bb35f9",
     "url": "/lixin_hpym/dist/img/1.4942a103.png"
   },
@@ -52,20 +48,24 @@ self.__precacheManifest = [
     "url": "/lixin_hpym/dist/img/2.550196ec.png"
   },
   {
-    "revision": "2c3eab2ddf3fb03125fa8bdd8fc39351",
-    "url": "/lixin_hpym/dist/img/4.2c3eab2d.png"
-  },
-  {
-    "revision": "3808b51270981da0c3d1123df7bfd5f5",
-    "url": "/lixin_hpym/dist/img/6.3808b512.png"
+    "revision": "d985740a871879faedbb0bd3b5bcc2ca",
+    "url": "/lixin_hpym/dist/img/7.d985740a.png"
   },
   {
     "revision": "184933633ef4c51f14594d0d425f4de0",
     "url": "/lixin_hpym/dist/img/3.18493363.png"
   },
   {
+    "revision": "2c3eab2ddf3fb03125fa8bdd8fc39351",
+    "url": "/lixin_hpym/dist/img/4.2c3eab2d.png"
+  },
+  {
     "revision": "2e3a226b5c7424b24fc4a5de031d68e0",
     "url": "/lixin_hpym/dist/img/5.2e3a226b.png"
+  },
+  {
+    "revision": "3808b51270981da0c3d1123df7bfd5f5",
+    "url": "/lixin_hpym/dist/img/6.3808b512.png"
   },
   {
     "revision": "da5e3028575bed4c3d8d1826c3c306e1",
@@ -232,8 +232,16 @@ self.__precacheManifest = [
     "url": "/lixin_hpym/dist/img/wave_l2.ba32abb8.png"
   },
   {
-    "revision": "6b1f341e10d5cd68caa379c8e4f67ac0",
-    "url": "/lixin_hpym/dist/img/m2.6b1f341e.png"
+    "revision": "355ee4bac36f04955a46b5e0b038ea3f",
+    "url": "/lixin_hpym/dist/img/1.355ee4ba.png"
+  },
+  {
+    "revision": "6920343dbecf9d204177487cd4af6e64",
+    "url": "/lixin_hpym/dist/img/2.6920343d.png"
+  },
+  {
+    "revision": "678e72080a8af3c7d3f691813b53fb87",
+    "url": "/lixin_hpym/dist/img/4.678e7208.png"
   },
   {
     "revision": "3c9737cee84c5e34441ef7768c21f947",
@@ -244,24 +252,16 @@ self.__precacheManifest = [
     "url": "/lixin_hpym/dist/img/m3.e412920f.png"
   },
   {
-    "revision": "355ee4bac36f04955a46b5e0b038ea3f",
-    "url": "/lixin_hpym/dist/img/1.355ee4ba.png"
+    "revision": "525ec3f12f29e5b26349ca1811221aa0",
+    "url": "/lixin_hpym/dist/img/m4.525ec3f1.png"
   },
   {
     "revision": "a2b0b1c8974e68ca7fc1f1621b4166cd",
     "url": "/lixin_hpym/dist/img/3.a2b0b1c8.png"
   },
   {
-    "revision": "6920343dbecf9d204177487cd4af6e64",
-    "url": "/lixin_hpym/dist/img/2.6920343d.png"
-  },
-  {
-    "revision": "525ec3f12f29e5b26349ca1811221aa0",
-    "url": "/lixin_hpym/dist/img/m4.525ec3f1.png"
-  },
-  {
-    "revision": "678e72080a8af3c7d3f691813b53fb87",
-    "url": "/lixin_hpym/dist/img/4.678e7208.png"
+    "revision": "6b1f341e10d5cd68caa379c8e4f67ac0",
+    "url": "/lixin_hpym/dist/img/m2.6b1f341e.png"
   },
   {
     "revision": "6755350a220cfb3c434de6e4b61f6594",
@@ -344,11 +344,11 @@ self.__precacheManifest = [
     "url": "/lixin_hpym/dist/img/31.9a6c2e7b.png"
   },
   {
-    "revision": "215e52964e61f3a3236c81339e54edd9",
+    "revision": "2cdd46e5f6b5b5a4601f9b6b5bcd88af",
     "url": "/lixin_hpym/dist/index.html"
   },
   {
-    "revision": "51a7555795e5b778b1dcf063eb0c56ed",
+    "revision": "c4e8acc4a43b43e3e86ad42bc7e6709d",
     "url": "/lixin_hpym/dist/favicon.png"
   },
   {
