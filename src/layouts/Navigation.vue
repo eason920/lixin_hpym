@@ -77,7 +77,7 @@ export default {
   letter-spacing: .5vw
   color: $b
   font:
-    size: .7vw
+    size: 1vw
     family: $ff
 #logo
   opacity: .5
@@ -133,6 +133,6 @@ export default {
   @extend %text
   @include classicHover
   transition: .3s
-  padding: 15px 11px 15px 15px
+  padding: 15px 6px 15px 15px
 
 </style>

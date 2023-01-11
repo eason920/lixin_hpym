@@ -64,7 +64,6 @@ $c: #9FD9F6
 
 .msg_title
   margin-bottom: 30px
-  font-size: 20px
   font-weight: 500
   color: $c
   font-family: $family3
@@ -77,27 +76,28 @@ $c: #9FD9F6
   width: 100%
 
 .item
-  font-size: 16px
   margin-bottom: 0
   margin-right: 0
   width: 100%
-  height: 45px
   padding-left: 0
   display: flex
   align-items: center
   justify-content: space-between
   white-space: nowrap
   border-bottom: solid 1px $c
+  padding: 15px 0px
+  
 
   &:nth-of-type(even)
     margin-right: 0
 
   .label, .desc
     font:
-      size: 15px
       family: "Times New Roman"!important
 
   .label
+    font-size: 1.7
+    font-weight:500
     color: $c
     margin-bottom: 0
     margin-right: 20px
@@ -105,7 +105,8 @@ $c: #9FD9F6
     font-family: $family3
 
   .desc
-    font-size: 15px
+    font-size: 1.7
+    font-weight:500
     text-align: right
     line-height: 1.4
     color: $c
@@ -191,9 +192,13 @@ $c: #9FD9F6
   .logo_link
     a
       padding-right: 2vw
-      width: 10vw
+      width: 11vw
+
+    
+    a:last-child
+      padding-right: 0vw
   .logo_logo
-    width: 20vw
+    width: 22vw
 
 @media screen and (max-width: 768px)
   .content

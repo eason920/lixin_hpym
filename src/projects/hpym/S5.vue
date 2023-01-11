@@ -196,6 +196,8 @@ $g: 15px
     width: 50%
   .pic_text
     height: 36px
+     
+        
 @media screen and (max-width: $bp-mb)
   .box_pic
     flex-direction: column
@@ -232,8 +234,8 @@ $g: 15px
 .text
   color: #fff
   h2, p
-    line-height: 1.7
-    letter-spacing: .3vw
+    
+    
   p
     font:
       family: $ff
@@ -264,9 +266,20 @@ $g: 15px
     h2
       text-align: right
       padding-right: $g
+      font:
+          size: 1.7vw
+          weight: 500
+      line-height:1.4 
+
     p
       padding-left: $g
-      text-align: left
+      text-align: justify
+      line-height:2
+      letter-spacing: 0vw
+      font:
+          size: 1vw
+          weight: 500
+      
 
 @media screen and (max-width: $bp-mb)
   .text

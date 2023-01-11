@@ -211,15 +211,24 @@ export default {
     h2
       text-align: right
       padding-right: $g
+      font:
+          size: 1.7vw
+          weight: 500
+      line-height:1.4 
     p
       padding-left: $g
-      text-align: left
+      text-align: justify
+      letter-spacing: 0vw
+      font:
+          size: 1vw
+          weight: 500
 
 @media screen and (max-width: $bp-mb)
   .text
     h2
       line-height: 1.5
     p
+      font-size: 3.2vw
       margin: 4vw 0 10vw
       &:last-child
         margin:
@@ -328,25 +337,30 @@ export default {
   top: 50%
   transform: translateY(-50%)
 
-$lr: 2vw
+
 .pre
-  left: $lr
   background:
     image: url("./S6/pre.png")
 
 .nxt
-  right: $lr
   background:
     image: url("./S6/nxt.png")
 
 @media screen and (min-width: $bp-pc)
   $lr: 5vw
   .pre
+    left: $lr
 
   .nxt
     right: $lr
 
 @media screen and (max-width: $bp-mb)
+  $lr: 2vw
+  .pre
+    left: $lr
+
+  .nxt
+    right: $lr
 
 // --------------------------------
 // dot
@@ -355,7 +369,6 @@ $w: 10px
   display: flex
   justify-content: center
   height: 5px
-  background-color: rgba(159, 217, 246, .4)
   li
     width: 25%
     position: relative

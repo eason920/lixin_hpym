@@ -171,15 +171,20 @@
     text-align: right
     padding: 1.5vw 0
     padding-right: $g
+    font:
+        size: 1.7vw
+        weight: 500
     span
-      letter-spacing: .3vw
+      letter-spacing: .2vw
   .text2
-    width: 50%
+    width: 55%
     padding-left: $g
-    text-align: left
+    text-align: justify
     font-size: 0.8vw
     display: flex
     align-items: center
+    font:
+        size: 1vw
 
 @media screen and (max-width: $bp-mb)
   .text

@@ -210,9 +210,17 @@ $g: 15px
     h2
       text-align: right
       padding-right: $g
+      font:
+          size: 1.7vw
+          weight: 500
+      line-height:1.4 
     p
       padding-left: $g
       text-align: left
+      letter-spacing: 0vw
+      font:
+          size: 1vw
+          weight: 500
 
 @media screen and (max-width: $bp-mb)
   .text

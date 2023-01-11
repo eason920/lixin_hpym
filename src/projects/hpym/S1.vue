@@ -77,10 +77,10 @@
 @media screen and (min-width: $bp-pc)
   #sec1
     // height: 56.25vw
-    height: 100vh
+    height: 115vh
     background:
       image: url(./S1/bg.jpg)
-      size: cover
+      size: 100%
       position: 50% 0
   .mark
     width: 9vw
@@ -99,7 +99,7 @@
         bottom: 3vw
       z-index: 2
     .title_img1
-      width: 40vw // title height
+      width: 63vw // title height
       margin:
         right: 2vw
     .title_box
@@ -112,7 +112,7 @@
     .title_box_img2
       width: 12vw
     .title_bg
-      height: 25vh
+      height: 35vh
       background-image: linear-gradient(to top,rgba(0,0,0,1) 20%, rgba(0,0,0,.5) 85%, rgba(0,0,0,0))
       position: absolute
       bottom: 0
@@ -158,7 +158,7 @@
       .appoint
         @include classicHover
         width: 60vw
-        padding: 3vw 0
+        padding: 3vw 0 3.5vw
         img
           width: 80%
 
