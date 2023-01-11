@@ -176,19 +176,26 @@ export default {
   width: 80vw
   margin: 0 auto
   color: #fff
-  h2, p
-    line-height: 1.7
-    letter-spacing: .3vw
+  line-height: 1.5
+  font: 
+    size: calc(12 * 100vw / 375)
+  h2
+    font:
+      size: 1.25em
+      weight: 600
   p
     font:
       family: $ff
-      size: 0.5vw
+      weight: 300
 @media screen and (min-width: $bp-pc)
   $g: 2vw
   .text
     position: relative
     display: flex
     flex-wrap: wrap
+    line-height: 1.7
+    font: 
+      size: calc(20 * 100vw / 1920)
     margin:
       top: 3vw
       bottom: 3vw
@@ -212,16 +219,12 @@ export default {
       text-align: right
       padding-right: $g
       font:
-          size: 1.7vw
-          weight: 500
+        size: 1.63em
       line-height:1.4 
     p
       padding-left: $g
       text-align: justify
       letter-spacing: 0vw
-      font:
-          size: 1vw
-          weight: 500
 
 @media screen and (max-width: $bp-mb)
   .text
@@ -328,8 +331,10 @@ export default {
 .pre, .nxt
   display: block
   position: absolute
-  width: 20px
-  height: 62px
+  width: .5em
+  height: 1.55em
+  font: 
+    size: 20px
   z-index: 3
   cursor: pointer
   background:

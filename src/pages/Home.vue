@@ -143,12 +143,22 @@ section
   top: -10vh
 .wave_l1, .wave_l2
   left: 0
+  width: calc(100 * 100vw / 375)
 .wave_r1, .wave_r2
   right: 0
+  width: calc(172 * 100vw / 375)
 #section8
   background:
     color: #000
 @media screen and (min-width: $bp-pc)
+  .wave
+    top: -10vh
+  .wave_l1, .wave_l2
+    left: 0
+    width: calc(517 * 100vw / 1920)
+  .wave_r1, .wave_r2
+    right: 0
+    width: calc(517 * 100vw / 1920)
   $ga: #141F24
   $gb: #4C7589
   $gc: #649EB9

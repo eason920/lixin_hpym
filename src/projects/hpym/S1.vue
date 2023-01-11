@@ -78,6 +78,8 @@
   #sec1
     // height: 56.25vw
     height: 115vh
+    min-height: calc(100vw * 900 / 1920)
+    max-height: calc(100vw * 1080 / 1920)
     background:
       image: url(./S1/bg.jpg)
       size: 100%
@@ -183,11 +185,10 @@ export default {
   created() {},
 
   mounted() {
-    $(".title_box").click(()=>{
+    $(".title_box,.appoint").click(()=>{
       $("html,body").animate({scrollTop: $("#contact").offset().top}, 1000);
     });
   },
-
   computed: {}
 }
 </script>

@@ -58,7 +58,8 @@
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-duration="800"
-          ><span>宏觀建築 專鑄經典 </span><span>日本三井不動產指定合作</span></h2>
+          >宏觀建築 專鑄經典 <br 
+            v-if="isMobile" />日本三井不動產指定合作</h2>
           <p
             data-aos-once="false"
             data-aos="fade-up"
@@ -177,13 +178,17 @@ $g: 15px
 // --------------------------------
 .text
   color: #fff
-  h2, p
-    line-height: 1.7
-    letter-spacing: .3vw
+  line-height: 1.5
+  font: 
+    size: calc(12 * 100vw / 375)
+  h2
+    font:
+      size: 1.25em
+      weight: 600
   p
     font:
       family: $ff
-      size: 0.5vw
+      weight: 300
 @media screen and (min-width: $bp-pc)
   $g: 2vw
   .text
@@ -191,6 +196,9 @@ $g: 15px
     display: flex
     flex-wrap: wrap
     margin: 3vw 0
+    line-height: 1.7
+    font: 
+      size: calc(20 * 100vw / 1920)
     &:after
       content: ""
       height: 100%
@@ -211,16 +219,12 @@ $g: 15px
       text-align: right
       padding-right: $g
       font:
-          size: 1.7vw
-          weight: 500
+        size: 1.63em
       line-height:1.4 
     p
       padding-left: $g
       text-align: left
       letter-spacing: 0vw
-      font:
-          size: 1vw
-          weight: 500
 
 @media screen and (max-width: $bp-mb)
   .text

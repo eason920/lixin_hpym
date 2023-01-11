@@ -102,15 +102,16 @@ export default {
     display: flex
     justify-content: flex-end
     align-items: center
+    gap: 1.6vw
   li
     a
       display: block
       padding: 14px 0
-      margin-right: 1.7vw
       text-decoration: none
       @extend %text
       position: relative
       transition: color .3s
+      white-space: nowrap
       &:after
         content: ""
         position: absolute
@@ -134,5 +135,6 @@ export default {
   @include classicHover
   transition: .3s
   padding: 15px 6px 15px 15px
+  white-space: nowrap
 
 </style>

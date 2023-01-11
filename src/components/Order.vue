@@ -2,10 +2,9 @@
   <div class="order-bg">
     <div class="order-top">
       <div class="title-block">
-        <h3 class="title">{{ order.title }}</h3>
-        <div class="subtitle">{{ order.subTitle }}</div>
+        <h3 class="title" v-if="order.title" >{{ order.title }}</h3>
+        <div class="subtitle" v-if="order.subTitle">{{ order.subTitle }}</div>
       </div>
-      <div class="order-subtitle" v-html="order.subTitle"></div>
       <div class="order">
         <div class="form">
           <div class="group">
@@ -258,32 +257,16 @@ export default {
   .order-top {
     position: relative;
     overflow: hidden;
+    .title-block{
+     margin: 0 0 calc(100vw * 31 / 1920) 0;
+    }
     .title {
       color: #9FD9F6;
-      font-size: 48px;
+      font-size: calc(100vw * 72 / 1920);
+      font-family:'Times New Roman' !important;
+      font-weight: 500;
     }
-  }
-  .order-title {
-    font-family: $family2;
-    width: 80vw;
-    padding-top: 20px;
-    padding-bottom: 8px;
-    font-weight: bold;
-    line-height: 1.3;
-    font-size: calc(100vw * 36 / 1920);
-    text-align: center;
-    color: #9FD9F6;
-    background-color: transparent;
-    margin: 0 auto;
-  }
-
-  .order-subtitle {
-    width: 100vw;
-    font-size: 20px;
-    text-align: center;
-    color: $order_subtitle_color;
-    margin-bottom: 40px;
-    padding-bottom: 18px;
+    .subtitle {}
   }
 
   .order {
@@ -350,6 +333,7 @@ export default {
       opacity: 0.8;
       color: #9FD9F6;
       text-align: left;
+      white-space: nowrap;
     }
   }
 
@@ -401,16 +385,14 @@ export default {
     > img {
       display: block;
     }
-    .order-title {
-      padding-top: 10px;
-      padding-bottom: 5px;
-      font-size: calc(100vw * 20 / 375);
-    }
-
-    .order-subtitle {
-      // display: none;
-      font-size: 21px;
-    }
+    .order-top {
+      .title-block{
+      margin: 0 0 calc(100vw * 20 / 375) 0;
+      }
+      .title {
+      font-size: calc(100vw * 29 / 375);
+      }
+  }
     .order {
       width: calc(100% - 60px) !important;
       margin: 0 auto;

@@ -61,13 +61,18 @@ $c: #9FD9F6
     z-index: -1
     img
       width: 100%
+.msg
+  font: 
+    size: calc(25 * 100vw / 1920)
 
 .msg_title
-  margin-bottom: 30px
+  margin-bottom: 0.9em
   font-weight: 500
   color: $c
   font-family: $family3
   text-align: left
+  font: 
+    size: 1.4em
 
 .info
   display: flex
@@ -85,7 +90,7 @@ $c: #9FD9F6
   justify-content: space-between
   white-space: nowrap
   border-bottom: solid 1px $c
-  padding: 15px 0px
+  padding: 0.6em 0
   
 
   &:nth-of-type(even)

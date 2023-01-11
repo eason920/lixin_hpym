@@ -19,7 +19,7 @@
             data-aos-duration="1400"
           >台北最後一塊重劃區、台北科技走廊最後一塊拼圖，引進生技、數位醫療、智慧科技等產業，北士科就是未來的信義計畫區，強勢動能逆襲大台北。</p>
           <div v-if="isMobile" class="canvas0"><img src="./S3/empty0.png" /><img class="float group0" :class="[{ani: bAddClass0}]" src="./S3/0_m.jpg" /></div>
-          <h2><span>各大知名企業超前部署</span> <span>啟動大北區門戶經濟引擎</span></h2>
+          <h2>各大知名企業超前部署 啟動大北區門戶經濟引擎</h2>
           <p
             data-aos-once="false"
             data-aos="fade-up"
@@ -95,13 +95,17 @@ $g: 5px
 #sec3
   display: flex
   color: #fff
-  h2, p
-    line-height: 1.4
+  line-height: 1.5
+  font: 
+    size: calc(12 * 100vw / 375)
+  h2
+    font:
+      size: 1.25em
+      weight: 600
   p
     font:
       family: $ff
-      weight: lighter
-      size: 1vw
+      weight: 300
 .title
   margin: 0 auto
   img
@@ -149,14 +153,14 @@ $g: 5px
 @media screen and (min-width: $bp-pc)
   #sec3
     padding: 3vw 10vw 5vw
-    h2, p
-    letter-spacing: 0vw  
+    line-height: 1.7
+    font: 
+      size: calc(20 * 100vw / 1920)
 
     h2
       text-align: left
       font:
-        size: 1.6vw
-        weight: 500
+        size: 1.63em
     p
       margin: 1.5vw 0 5vw
       text-align: justify
@@ -165,7 +169,8 @@ $g: 5px
   $g: 2vw
   .box_text
     order: 2
-    width: 50vw
+    width: 52vw
+    margin-right: -2vw
     padding:
       left: $g
     display: flex

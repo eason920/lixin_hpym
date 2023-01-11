@@ -149,22 +149,28 @@
 // --------------------------------
 .text
   color: #fff
-  font:
-    weight: normal
+  line-height: 1.5
+  font: 
+    size: calc(12 * 100vw / 375)
 .text1
+  font:
+    size: 1.25em
+    weight: 600
 
 .text2
-  line-height: 1.5
   font:
     family: $ff
-    size: 1vw
+    weight: 300
 @media screen and (min-width: $bp-pc)
   $g: 1.5vw
   .text
     display: flex
     flex-direction: row
-    width: 70vw
+    width: 80vw
     margin: 2vw auto
+    line-height: 1.7
+    font: 
+      size: calc(20 * 100vw / 1920)
   .text1
     width: 50%
     border-right: solid 1px #fff
@@ -172,19 +178,16 @@
     padding: 1.5vw 0
     padding-right: $g
     font:
-        size: 1.7vw
-        weight: 500
+      size: 1.63em
     span
       letter-spacing: .2vw
   .text2
-    width: 55%
+    width: 50%
     padding-left: $g
     text-align: justify
     font-size: 0.8vw
     display: flex
     align-items: center
-    font:
-        size: 1vw
 
 @media screen and (max-width: $bp-mb)
   .text
@@ -195,9 +198,8 @@
       display: block
       text-align: center
       line-height: 1.5
-      letter-spacing: 1vw
+      letter-spacing: .06em
   .text2
-    font-size: 3.2vw
     text-align: center
     width: 80vw
     margin: 0 auto

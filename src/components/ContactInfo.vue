@@ -254,6 +254,7 @@ export default {
   width: 280px;
   height: 60px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   color: #000;
@@ -352,9 +353,11 @@ export default {
 
   .address {
     width: 100%;
-    padding: 0 1em;
     text-align: justify;
     border-radius: 0;
+    height: auto;
+    line-height: 1.7;
+    padding: 1em 1em;
     + .google-btn,
     + .btn {
       border-radius: 0;

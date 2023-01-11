@@ -106,15 +106,8 @@
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="800"
-            v-if="isMobile"
-          >「宏普陽明」近千坪基地，面對文林國小校園第一排，散步69米到北士科最大廣達3.29公頃的福星公園，雙享北士科正核心與雙園正軸心，悠然大隱寧境。</p>
-          <p
-            v-else
-            data-aos-once="false"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            data-aos-duration="800"
-          >「宏普陽明」近千坪基地，面對文林國小校園第一排，散步69米到北士科最大廣達3.29公頃的福星公園，雙享北士科正核心與雙園正軸心，悠然大隱寧境。</p>
+          >「宏普陽明」近千坪基地，面對文林國小校園第一排，散步69米到北士科最大廣達3.29公頃的福星公園，雙享北士科正核心與雙園正軸心，<br 
+            v-if="isMobile" />悠然大隱寧境。</p>
         </div>
       </div>
     </section>
@@ -233,13 +226,17 @@ $g: 15px
 // --------------------------------
 .text
   color: #fff
-  h2, p
-    
-    
+  line-height: 1.5
+  font: 
+    size: calc(12 * 100vw / 375)
+  h2
+    font:
+      size: 1.25em
+      weight: 600
   p
     font:
       family: $ff
-      size: 0.5vw
+      weight: 300
 @media screen and (min-width: $bp-pc)
   $g: 2vw
   .text
@@ -247,6 +244,8 @@ $g: 15px
     display: flex
     flex-wrap: wrap
     margin: 3vw 0
+    font: 
+      size: calc(20 * 100vw / 1920)
     &:after
       content: ""
       height: 100%
@@ -267,8 +266,7 @@ $g: 15px
       text-align: right
       padding-right: $g
       font:
-          size: 1.7vw
-          weight: 500
+       size: 1.63em
       line-height:1.4 
 
     p
@@ -283,8 +281,6 @@ $g: 15px
 
 @media screen and (max-width: $bp-mb)
   .text
-    h2
-      line-height: 1.5
     p
       margin: 4vw 0 14vw
 
