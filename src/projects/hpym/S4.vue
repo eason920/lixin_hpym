@@ -185,7 +185,7 @@
     width: 50%
     padding-left: $g
     text-align: justify
-    font-size: 0.8vw
+    font-size: 1vw
     display: flex
     align-items: center
 
