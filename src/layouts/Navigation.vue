@@ -130,6 +130,7 @@ export default {
   // white
   &.navBgBlack
     background-color: rgba(0,0,0,.5)
+    z-index: 99
 .appoint
   @extend %text
   @include classicHover
