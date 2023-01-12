@@ -8,7 +8,7 @@
           data-aos-delay="0"
           data-aos-duration="800"
         >
-          <img src="./S5/1.png" />
+          <img src="./S5/1.jpg" />
           <span class="pic_text">合成參考示意圖</span>
         </div>
         <div class="pic2">
@@ -17,28 +17,28 @@
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="800"
-          ><img src="./S5/2.png" />
+          ><img src="./S5/2.jpg" />
            <span class="pic_text">校園第一排</span></div>
           <div
             data-aos-once="false"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="800"
-          ><img src="./S5/3.png" />
+          ><img src="./S5/3.jpg" />
            <span class="pic_text">福星公園</span></div>
           <div
             data-aos-once="false"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="800"
-          ><img src="./S5/4.png" />
+          ><img src="./S5/4.jpg" />
           <span class="pic_text">文林國小</span></div>
           <div
             data-aos-once="false"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="800"
-          ><img src="./S5/5.png" />
+          ><img src="./S5/5.jpg" />
            <span class="pic_text">公園第一境</span></div>
         </div>
       </div>

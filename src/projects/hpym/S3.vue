@@ -47,27 +47,27 @@
         </div>
       </div>
       <div class="box_canvas">
-        <div class="canvas0" v-if="!isMobile"><img src="./S3/empty0.png" /><img class="float group0" :class="[{ani: bAddClass0}]" src="./S3/0.png" /></div>
+        <div class="canvas0" v-if="!isMobile"><img src="./S3/empty0.png" /><img class="float group0" :class="[{ani: bAddClass0}]" src="./S3/0.jpg" /></div>
         <div class="canvas">
-          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/11.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/12.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/13.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/14.png" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/11.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/12.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/13.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group1" :class="[{ani: bAddClass1}]" src="./S3/14.jpg" /></div>
           <!---->
-          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/21.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/22.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/23.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/24.png" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/21.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/22.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/23.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group2" :class="[{ani: bAddClass2}]" src="./S3/24.jpg" /></div>
           <!---->
-          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/31.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/32.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/33.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/34.png" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/31.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/32.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/33.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group3" :class="[{ani: bAddClass3}]" src="./S3/34.jpg" /></div>
           <!---->
-          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/41.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/42.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/43.png" /></div>
-          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/44.png" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/41.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/42.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/43.jpg" /></div>
+          <div><img src="./S3/empty.png" /><img class="float group4" :class="[{ani: bAddClass4}]" src="./S3/44.jpg" /></div>
         </div>
         <h2 v-if="isMobile">政府交通建設先行 漲幅增值勢在必行</h2>
         <p v-if="isMobile"

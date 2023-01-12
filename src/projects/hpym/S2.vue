@@ -6,9 +6,8 @@
         data-aos="fade-up"
         data-aos-delay="0"
         data-aos-duration="1400"
-        class="appoint"
       >
-        <img src="./S2/map.png" />
+        <img src="./S2/map.jpg" />
       </div>
     </section>
   </div>

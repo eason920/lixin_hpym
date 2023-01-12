@@ -37,22 +37,22 @@
     position: center
     size: cover
   &:nth-child(1), &:nth-child(8), &:nth-child(15)
-    background-image: url('./S4/7.png')
+    background-image: url('./S4/7.jpg')
 
   &:nth-child(2), &:nth-child(9), &:nth-child(16)
-    background-image: url('./S4/1.png')
+    background-image: url('./S4/1.jpg')
 
   &:nth-child(3), &:nth-child(10), &:nth-child(17)
-    background-image: url('./S4/2.png')
+    background-image: url('./S4/2.jpg')
 
   &:nth-child(4), &:nth-child(11), &:nth-child(18)
-    background-image: url('./S4/3.png')
+    background-image: url('./S4/3.jpg')
   &:nth-child(5), &:nth-child(12), &:nth-child(19)
-    background-image: url('./S4/4.png')
+    background-image: url('./S4/4.jpg')
   &:nth-child(6), &:nth-child(13), &:nth-child(20)
-    background-image: url('./S4/5.png')
+    background-image: url('./S4/5.jpg')
   &:nth-child(7), &:nth-child(14), &:nth-child(21)
-    background-image: url('./S4/6.png')
+    background-image: url('./S4/6.jpg')
 
 // 總高
 @media screen and (min-width: $bp-pc)

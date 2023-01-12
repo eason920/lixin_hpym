@@ -8,7 +8,7 @@
           data-aos-delay="0"
           data-aos-duration="800"
         >
-          <img src="./S7/1.png" />
+          <img src="./S7/1.jpg" />
           <span class="pic_text">大安區 和苑三井花園飯店</span>
         </div>
         <div class="pic2">
@@ -17,28 +17,28 @@
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="800"
-          ><img src="./S7/2.png" />
+          ><img src="./S7/2.jpg" />
            <span class="pic_text">大安區 宏普PARK</span></div>
           <div
             data-aos-once="false"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="800"
-          ><img src="./S7/3.png" />
+          ><img src="./S7/3.jpg" />
            <span class="pic_text">信義計劃區 新川普</span></div>
           <div
             data-aos-once="false"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="800"
-          ><img src="./S7/4.png" />
+          ><img src="./S7/4.jpg" />
           <span class="pic_text">大直重劃區明水富御</span></div>
           <div
             data-aos-once="false"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="800"
-          ><img src="./S7/5.png" />
+          ><img src="./S7/5.jpg" />
            <span class="pic_text">中山區 宏普頤和</span></div>
         </div>
       </div>
