@@ -78,7 +78,7 @@ export default {
   color: $b
   font:
     size: 1vw
-    family: $ff
+    family: "Noto Sans TC" !important
 #logo
   opacity: .5
   transition: .3s

@@ -32,12 +32,18 @@
           data-aos-duration="800"
         >29~46坪高坪效3~3+1房皆採雙人房規劃，挑高3米5宜人尺度、開放餐廚、雙衛浴開窗…高得房率、獨具競爭力的精緻美型空間，已成為周邊醫療生技科技、企業高階、學校老師…置產北士科首選標的！</p>
         <!-- 2 -->
-        <h2
+        <h2 v-if="!isMobile"
           data-aos-once="false"
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="800"
         >島嶼秘境 露天泳池 星級飯店奢雅時光饗宴</h2>
+        <h2 v-if="isMobile"
+          data-aos-once="false"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="800"
+        >島嶼秘境 露天泳池<br>星級飯店奢雅時光饗宴</h2>
         <p
           data-aos-once="false"
           data-aos="fade-up"
@@ -185,7 +191,7 @@ export default {
       weight: 600
   p
     font:
-      family: $ff
+      family: "Noto Sans TC" !important
       weight: 300
 @media screen and (min-width: $bp-pc)
   $g: 2vw
@@ -415,7 +421,7 @@ $w: 10px
     color: #9FD9F6
     font:
       size: 1vw
-      family: $ff
+      family: "Noto Sans TC" !important
     line-height: 1.7
     width: 80vw
     margin: 0 auto

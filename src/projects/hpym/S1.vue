@@ -114,7 +114,7 @@
     .title_box_img2
       width: 12vw
     .title_bg
-      height: 35vh
+      height: 15vh
       background-image: linear-gradient(to top,rgba(0,0,0,1) 20%, rgba(0,0,0,.5) 85%, rgba(0,0,0,0))
       position: absolute
       bottom: 0

@@ -19,7 +19,8 @@
             data-aos-duration="1400"
           >台北最後一塊重劃區、台北科技走廊最後一塊拼圖，引進生技、數位醫療、智慧科技等產業，北士科就是未來的信義計畫區，強勢動能逆襲大台北。</p>
           <div v-if="isMobile" class="canvas0"><img src="./S3/empty0.png" /><img class="float group0" :class="[{ani: bAddClass0}]" src="./S3/0_m.jpg" /></div>
-          <h2>各大知名企業超前部署 啟動大北區門戶經濟引擎</h2>
+          <h2 v-if="!isMobile">各大知名企業超前部署 啟動大北區門戶經濟引擎</h2>
+          <h2 v-if="isMobile">各大知名企業超前部署<br>啟動大北區門戶經濟引擎</h2>
           <p
             data-aos-once="false"
             data-aos="fade-up"
@@ -104,7 +105,7 @@ $g: 5px
       weight: 600
   p
     font:
-      family: $ff
+      family: "Noto Sans TC" !important
       weight: 300
 .title
   margin: 0 auto

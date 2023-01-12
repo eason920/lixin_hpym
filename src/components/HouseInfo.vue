@@ -98,7 +98,7 @@ $c: #9FD9F6
 
   .label, .desc
     font:
-      family: "Times New Roman"!important
+      family: "Noto Sans TC" !important
       size: calc(16 * 100vw / 1920)
 
   .label

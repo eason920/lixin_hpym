@@ -172,7 +172,7 @@ $g: 15px
 .pic_text
   font:
     size: calc(12 * 100vw / 375)
-    family: $ff
+    family: "Noto Sans TC" !important
   position: absolute
   color: #fff
   display: flex
@@ -237,7 +237,7 @@ $g: 15px
       weight: 600
   p
     font:
-      family: $ff
+      family: "Noto Sans TC" !important
       weight: 300
 @media screen and (min-width: $bp-pc)
   $g: 2vw
@@ -278,7 +278,7 @@ $g: 15px
       letter-spacing: 0vw
       font:
           size: 1vw
-          weight: 500
+          weight: 300
       
 
 @media screen and (max-width: $bp-mb)
