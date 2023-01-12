@@ -125,7 +125,7 @@ $g: 15px
   width: 100%
   bottom: 0
   font:
-    size: 1vw
+    size: calc(12 * 100vw / 375)
     family: $ff
   position: absolute
   color: #fff
@@ -143,6 +143,9 @@ $g: 15px
     width: 50%
   .pic_text
     height: 36px
+    font:
+     size: calc(16 * 100vw / 1920)
+
 @media screen and (max-width: $bp-mb)
   .box_pic
     flex-direction: column

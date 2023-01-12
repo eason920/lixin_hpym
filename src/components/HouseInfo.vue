@@ -99,6 +99,7 @@ $c: #9FD9F6
   .label, .desc
     font:
       family: "Times New Roman"!important
+      size: calc(16 * 100vw / 1920)
 
   .label
     font-size: 1.7
@@ -110,7 +111,6 @@ $c: #9FD9F6
     font-family: $family3
 
   .desc
-    font-size: 1.7
     font-weight:500
     text-align: right
     line-height: 1.4
@@ -137,6 +137,10 @@ $c: #9FD9F6
     height: auto
     margin-left: 20px
     white-space: normal
+
+    .label, .desc
+      font:
+       size: calc(12 * 100vw / 375)  
 
 
 /* 平板尺寸 */

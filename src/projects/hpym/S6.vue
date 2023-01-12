@@ -266,15 +266,19 @@ export default {
   .swiper-slide
     &:nth-child(1), &:nth-child(5)
       background-image: url('./S6/m1.png')
+      background-size: cover
 
     &:nth-child(2), &:nth-child(6)
       background-image: url('./S6/m2.png')
+      background-size: cover
 
     &:nth-child(3), &:nth-child(7)
       background-image: url('./S6/m3.png')
+      background-size: cover
 
     &:nth-child(4)
       background-image: url('./S6/m4.png')
+      background-size: cover
 
 // 架構
 #sec6

@@ -18,15 +18,15 @@
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section2" @init="init">
       <!-- PC -->
-      <img v-if="!isMobile" :style="pcTop1" class="wave wave_l1" src="../projects/hpym/all/wave_l1.png" />
+      <img v-if="!isMobile" :style="pcTop1" class="wave wave_l1 waveAni" src="../projects/hpym/all/wave_l1.png" />
       <S2 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section3" @init="init">
       <!-- PC -->
-      <img v-if="!isMobile" class="wave wave_r1" :style="pcTop2" src="../projects/hpym/all/wave_r1.png" />
+      <img v-if="!isMobile" class="wave wave_r1 waveAni" :style="pcTop2" src="../projects/hpym/all/wave_r1.png" />
       <!-- MB -->
-      <img v-if="isMobile" class="wave wave_l1" :style="mbTop1" src="../projects/hpym/all/wave_l1.png" />
-      <img v-if="isMobile" class="wave wave_r1" :style="mbTop2" src="../projects/hpym/all/wave_r1.png" />
+      <img v-if="isMobile" class="wave wave_l1 waveAni" :style="mbTop1" src="../projects/hpym/all/wave_l1.png" />
+      <img v-if="isMobile" class="wave wave_r1 waveAni" :style="mbTop2" src="../projects/hpym/all/wave_r1.png" />
       <S3 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section4" @init="init">
@@ -34,21 +34,21 @@
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section5" @init="init">
       <!-- PC -->
-      <img v-if="!isMobile" :style="pcTop3" class="wave wave_l2" src="../projects/hpym/all/wave_l2.png" />
-      <img v-if="!isMobile" :style="pcTop4" class="wave wave_r2" src="../projects/hpym/all/wave_r2.png" />
+      <img v-if="!isMobile" :style="pcTop3" class="wave wave_l2 waveAni" src="../projects/hpym/all/wave_l2.png" />
+      <img v-if="!isMobile" :style="pcTop4" class="wave wave_r2 waveAni" src="../projects/hpym/all/wave_r2.png" />
       <!-- MB -->
-      <img v-if="isMobile" class="wave wave_l2" :style="mbTop3" src="../projects/hpym/all/wave_l2.png" />
+      <img v-if="isMobile" class="wave wave_l2 waveAni" :style="mbTop3" src="../projects/hpym/all/wave_l2.png" />
       <S5 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section6" @init="init">
       <!-- MB -->
-      <img v-if="isMobile" class="wave wave_r1" :style="mbTop4" src="../projects/hpym/all/wave_r1.png" />
+      <img v-if="isMobile" class="wave wave_r1 waveAni" :style="mbTop4" src="../projects/hpym/all/wave_r1.png" />
       <S6 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section7" @init="init">
       <!-- MB -->
-      <img v-if="isMobile" class="wave wave_l2" :style="mbTop5" src="../projects/hpym/all/wave_l1.png" />
-      <img v-if="isMobile" class="wave wave_r2" :style="mbTop6" src="../projects/hpym/all/wave_r1.png" />
+      <img v-if="isMobile" class="wave wave_l2 waveAni" :style="mbTop5" src="../projects/hpym/all/wave_l1.png" />
+      <img v-if="isMobile" class="wave wave_r2 waveAni" :style="mbTop6" src="../projects/hpym/all/wave_r1.png" />
       <S7 />
     </vue-lazy-component>
     <vue-lazy-component class="section" id="section8" @init="init">
@@ -251,6 +251,16 @@ export default {
 #section8
   background:
     color: #000
+
+.waveAni
+  animation: tree 5s infinite alternate
+  transform: skewY(-15deg)
+  transform-origin: 100% 50%
+@keyframes tree
+  to
+    transform: skewY(0)
+
+
 @media screen and (min-width: $bp-pc)
   $ga: #141F24
   $gb: #4C7589
@@ -370,4 +380,6 @@ section
 .section .fp-tableCell {
   height: auto !important;
 }
+
+
 </style>
