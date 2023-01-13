@@ -422,6 +422,8 @@ export default {
     .robbitCheck {
       margin-top: 15px!important;
       width: 100%!important;
+      display: flex;
+      justify-content: center;
     }
     // .robbitCheck > div > div {
     //   width: 100%!important;

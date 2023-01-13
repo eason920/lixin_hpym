@@ -67,7 +67,7 @@
   .swiper-wrapper,
   .swiper-slide,
   .box_item
-    height: 24vw
+    height: 50vw
 
 @media screen and (max-width: $bp-mb) and (orientation: landscape)
   .swiper-container,
@@ -92,6 +92,7 @@
   font:
     size: 1vw
     family: "Noto Sans TC" !important
+    size: calc(12 * 100vw / 375)
   position: absolute
   width: 100%
   bottom: 0
@@ -111,12 +112,14 @@
     width: 90vw
   .box_text
     height: 36px
+    font:
+      size: calc(20 * 100vw / 1920)
 
 @media screen and (max-width: $bp-mb)
   .box
     width: 120vw
     margin:
-      left: -10vw
+      left: -2vw
     order: 1
   .title
     order: 2
@@ -243,7 +246,7 @@ export default {
           },
           // when window width is >= 640px
           0: {
-            slidesPerView: 5,
+            slidesPerView: 2.3,
             spaceBetween: 10
           }
         },

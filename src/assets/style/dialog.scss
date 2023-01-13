@@ -3,6 +3,10 @@
 .el-dialog{
    // height:calc(100% - 123px) !important;
 }
+
+.v-modal{
+  z-index: 0 !important;
+}
 .el-dialog__title {
   font-size: 32px !important;
   line-height:2 !important;
