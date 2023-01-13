@@ -17,6 +17,10 @@
               <el-input v-model="form.phone" placeholder></el-input>
             </div>
             <div class="row">
+              <label>信箱</label>
+              <el-input v-model="form.email" placeholder></el-input>
+            </div>
+            <div class="row">
               <label>居住城市</label>
               <el-select v-model="form.city" placeholder>
                 <el-option
@@ -285,7 +289,7 @@ export default {
   }
 
   .group {
-    height: 285px;
+    height: 360px;
     margin-bottom: 40px;
 
     &:nth-child(1) {
