@@ -32,27 +32,53 @@
 @import src/assets/style/myvar
 @import ./sass/share
 // 圖片
-.swiper-slide
-  background:
-    position: center
-    size: cover
-  &:nth-child(1), &:nth-child(8), &:nth-child(15)
-    background-image: url('./S4/3.jpg')
+@media screen and (min-width: $bp-pc)
+  .swiper-slide
+    background:
+      position: center
+      size: cover
+    &:nth-child(1), &:nth-child(8), &:nth-child(15)
+      background-image: url('./S4/1.jpg')
 
-  &:nth-child(2), &:nth-child(9), &:nth-child(16)
-    background-image: url('./S4/4.jpg')
+    &:nth-child(2), &:nth-child(9), &:nth-child(16)
+      background-image: url('./S4/2.jpg')
 
-  &:nth-child(3), &:nth-child(10), &:nth-child(17)
-    background-image: url('./S4/5.jpg')
+    &:nth-child(3), &:nth-child(10), &:nth-child(17)
+      background-image: url('./S4/3.jpg')
 
-  &:nth-child(4), &:nth-child(11), &:nth-child(18)
-    background-image: url('./S4/6.jpg')
-  &:nth-child(5), &:nth-child(12), &:nth-child(19)
-    background-image: url('./S4/7.jpg')
-  &:nth-child(6), &:nth-child(13), &:nth-child(20)
-    background-image: url('./S4/1.jpg')
-  &:nth-child(7), &:nth-child(14), &:nth-child(21)
-    background-image: url('./S4/2.jpg')
+    &:nth-child(4), &:nth-child(11), &:nth-child(18)
+      background-image: url('./S4/4.jpg')
+    &:nth-child(5), &:nth-child(12), &:nth-child(19)
+      background-image: url('./S4/5.jpg')
+    &:nth-child(6), &:nth-child(13), &:nth-child(20)
+      background-image: url('./S4/6.jpg')
+    &:nth-child(7), &:nth-child(14), &:nth-child(21)
+      background-image: url('./S4/7.jpg')
+
+
+@media screen and (max-width: $bp-mb)  
+
+  .swiper-slide
+    background:
+      position: center
+      size: cover
+    &:nth-child(1), &:nth-child(8), &:nth-child(15)
+      background-image: url('./S4/3.jpg')
+
+    &:nth-child(2), &:nth-child(9), &:nth-child(16)
+      background-image: url('./S4/4.jpg')
+
+    &:nth-child(3), &:nth-child(10), &:nth-child(17)
+      background-image: url('./S4/5.jpg')
+
+    &:nth-child(4), &:nth-child(11), &:nth-child(18)
+      background-image: url('./S4/6.jpg')
+    &:nth-child(5), &:nth-child(12), &:nth-child(19)
+      background-image: url('./S4/7.jpg')
+    &:nth-child(6), &:nth-child(13), &:nth-child(20)
+      background-image: url('./S4/1.jpg')
+    &:nth-child(7), &:nth-child(14), &:nth-child(21)
+      background-image: url('./S4/2.jpg')  
 
 // 總高
 @media screen and (min-width: $bp-pc)
@@ -229,13 +255,13 @@ export default {
       isTablet,
       bIsOpen: false,
       swipList: [
+        '日僑學校',
+        '歐洲學校',
         '陽明醫院',
         '振興醫院',
         '新光醫院',
         '榮民總醫院',
-        '美國學校',
-        '日僑學校',
-        '歐洲學校'
+        '美國學校'
       ],
       swiperOptions: {
         breakpoints: {
