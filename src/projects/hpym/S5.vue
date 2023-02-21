@@ -106,7 +106,7 @@
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="800"
-          >「宏普陽明」近千坪基地，面對文林國小校園第一排，散步69米到北士科最大廣達3.29公頃的福星公園，雙享北士科正核心與雙園正軸心，<br 
+          >「宏普陽明」近千坪基地，面對文林國小校園第一排，散步69米到北士科最大廣達3.29公頃的福星公園，雙享北士科正核心與雙園正軸心，<br
             v-if="isMobile" />悠然大隱寧境。</p>
         </div>
       </div>
@@ -191,8 +191,7 @@ $g: 15px
     height: 36px
     font:
      size: calc(16 * 100vw / 1920)
-     
-        
+
 @media screen and (max-width: $bp-mb)
   .box_pic
     flex-direction: column
@@ -229,7 +228,7 @@ $g: 15px
 .text
   color: #fff
   line-height: 1.5
-  font: 
+  font:
     size: calc(12 * 100vw / 375)
   h2
     font:
@@ -246,7 +245,7 @@ $g: 15px
     display: flex
     flex-wrap: wrap
     margin: 3vw 0
-    font: 
+    font:
       size: calc(20 * 100vw / 1920)
     &:after
       content: ""
@@ -269,7 +268,7 @@ $g: 15px
       padding-right: $g
       font:
        size: 1.63em
-      line-height:1.4 
+      line-height:1.4
 
     p
       padding-left: $g
@@ -279,7 +278,6 @@ $g: 15px
       font:
           size: 1vw
           weight: 300
-      
 
 @media screen and (max-width: $bp-mb)
   .text

@@ -206,7 +206,7 @@ export default {
       const min = time.getMinutes()
       const sec = time.getSeconds()
       const date = `${year}-${month}-${day} ${hour}:${min}:${sec}`
-      
+
       fetch('contact-form.php', {
         method: 'POST',
         body: formData

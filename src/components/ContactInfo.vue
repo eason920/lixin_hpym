@@ -86,13 +86,13 @@
 </template>
 
 <script>
-import info from "@/info";
-import { isMobile, isTablet } from "@/utils";
-import CallDialog from "@/components/Dialog/Call";
-import MessengerDialog from "@/components/Dialog/Messenger";
-import MapDialog from "@/components/Dialog/Map";
+import info from '@/info'
+import { isMobile, isTablet } from '@/utils'
+import CallDialog from '@/components/Dialog/Call'
+import MessengerDialog from '@/components/Dialog/Messenger'
+import MapDialog from '@/components/Dialog/Map'
 export default {
-  name: "contactInfo",
+  name: 'contactInfo',
   components: {
     CallDialog,
     MessengerDialog,
@@ -107,24 +107,24 @@ export default {
       isShowCallDialog: false,
       isShowMessengerDialog: false,
       isShowMapDialog: false
-    };
+    }
   },
   methods: {
     showCallDialog() {
       // if (!this.isMobile) return
-      this.isShowCallDialog = true;
+      this.isShowCallDialog = true
     },
     showMessengerDialog() {
       // if (!this.isMobile) return
-      this.isShowMessengerDialog = true;
+      this.isShowMessengerDialog = true
     },
 
     showMapDialog() {
       // if (!this.isMobile) return
-      this.isShowMapDialog = true;
+      this.isShowMapDialog = true
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

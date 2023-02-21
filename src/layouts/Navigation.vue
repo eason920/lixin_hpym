@@ -62,9 +62,9 @@ export default {
       })
     }
 
-    $(".appoint").click(()=>{
-      $("html,body").animate({scrollTop: $("#contact").offset().top}, 1000);
-    });
+    $('.appoint').click(() => {
+      $('html,body').animate({ scrollTop: $('#contact').offset().top }, 1000)
+    })
   }
 }
 </script>

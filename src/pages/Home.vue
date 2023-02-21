@@ -109,17 +109,17 @@ export default {
       isMobile,
       isSide: false,
       load: true,
-      pcTop1: "",
-      pcTop2: "",
-      pcTop3: "",
-      pcTop4: "",
+      pcTop1: '',
+      pcTop2: '',
+      pcTop3: '',
+      pcTop4: '',
       //
-      mbTop1: "",
-      mbTop2: "",
-      mbTop3: "",
-      mbTop4: "",
-      mbTop5: "",
-      mbTop6: "",
+      mbTop1: '',
+      mbTop2: '',
+      mbTop3: '',
+      mbTop4: '',
+      mbTop5: '',
+      mbTop6: '',
     }
   },
   created() {
@@ -143,96 +143,96 @@ export default {
           .on('load', imageLoaded)
           .attr('src', $(img).attr('src'))
       })
-      
-      const fnPcTop1 = ()=>{
-        const h = document.getElementById('section1').offsetHeight;
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -50) + "px";
+
+      const fnPcTop1 = () => {
+        const h = document.getElementById('section1').offsetHeight
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -50) + 'px'
         this.pcTop1 = top
       }
-      const fnPcTop2 = ()=>{
+      const fnPcTop2 = () => {
         const h = document.getElementById('section1').offsetHeight
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -40) + "px";
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -40) + 'px'
         this.pcTop2 = top
       }
-      const fnPcTop3 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight ) * 2.5
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -55) + "px";
+      const fnPcTop3 = () => {
+        const h = (document.getElementById('section1').offsetHeight) * 2.5
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -55) + 'px'
         this.pcTop3 = top
       }
-      const fnPcTop4 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight ) + (document.getElementById('section2').offsetHeight ) + (document.getElementById('section3').offsetHeight ) + (document.getElementById('section4').offsetHeight ) 
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -40) + "px";
+      const fnPcTop4 = () => {
+        const h = (document.getElementById('section1').offsetHeight) + (document.getElementById('section2').offsetHeight) + (document.getElementById('section3').offsetHeight) + (document.getElementById('section4').offsetHeight)
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -40) + 'px'
         this.pcTop4 = top
       }
       // --------------------------------
       // --------------------------------
-      const fnMbTop1 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight) * 1;
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -30) + "px";
+      const fnMbTop1 = () => {
+        const h = (document.getElementById('section1').offsetHeight) * 1
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -30) + 'px'
         this.mbTop1 = top
       }
-      const fnMbTop2 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight) * 3.5;
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -40) + "px";
+      const fnMbTop2 = () => {
+        const h = (document.getElementById('section1').offsetHeight) * 3.5
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -40) + 'px'
         this.mbTop2 = top
       }
-      const fnMbTop3 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight) * 3;
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -50) + "px";
+      const fnMbTop3 = () => {
+        const h = (document.getElementById('section1').offsetHeight) * 3
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -50) + 'px'
         this.mbTop3 = top
       }
-      const fnMbTop4 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight) * 3;
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -38) + "px";
+      const fnMbTop4 = () => {
+        const h = (document.getElementById('section1').offsetHeight) * 3
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -38) + 'px'
         this.mbTop4 = top
       }
-      const fnMbTop5 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight) * 4;
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -33) + "px";
+      const fnMbTop5 = () => {
+        const h = (document.getElementById('section1').offsetHeight) * 4
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -33) + 'px'
         this.mbTop5 = top
       }
-      const fnMbTop6 = ()=>{
-        const h = (document.getElementById('section1').offsetHeight) * 7;
-        const st = $(window).scrollTop() + $(window).height();
-        const top= "top:" + (h +st/100 * -42) + "px";
+      const fnMbTop6 = () => {
+        const h = (document.getElementById('section1').offsetHeight) * 7
+        const st = $(window).scrollTop() + $(window).height()
+        const top = 'top:' + (h + st / 100 * -42) + 'px'
         this.mbTop6 = top
       }
-      if( !this.isMobile ) {
+      if (!this.isMobile) {
         const action = () => {
-          fnPcTop1();
-          fnPcTop2();
-          fnPcTop3();
-          fnPcTop4();
+          fnPcTop1()
+          fnPcTop2()
+          fnPcTop3()
+          fnPcTop4()
         }
-        setTimeout(()=>{
-          action();
-        }, 1000);
-        $(window).scroll(()=>{
-          action();
+        setTimeout(() => {
+          action()
+        }, 1000)
+        $(window).scroll(() => {
+          action()
         })
       } else {
-        const action = ()=> {
-          fnMbTop1();
-          fnMbTop2();
-          fnMbTop3();
-          fnMbTop4();
-          fnMbTop5();
-          fnMbTop6();
+        const action = () => {
+          fnMbTop1()
+          fnMbTop2()
+          fnMbTop3()
+          fnMbTop4()
+          fnMbTop5()
+          fnMbTop6()
         }
-        setTimeout(()=>{
-          action();
-        }, 1000);
-        $(window).scroll(()=>{
-          action();
+        setTimeout(() => {
+          action()
+        }, 1000)
+        $(window).scroll(() => {
+          action()
         })
       }
     })
@@ -259,7 +259,6 @@ export default {
 @keyframes tree
   to
     transform: skewY(0)
-
 
 @media screen and (min-width: $bp-pc)
   $ga: #141F24
@@ -380,6 +379,5 @@ section
 .section .fp-tableCell {
   height: auto !important;
 }
-
 
 </style>

@@ -27,11 +27,11 @@
 </template>
 
 <script>
-import info from "@/info";
-import Footer from "@/layouts/Footer.vue";
+import info from '@/info'
+import Footer from '@/layouts/Footer.vue'
 import { isMobile, isTablet } from '@/utils'
 export default {
-  name: "houseInfo",
+  name: 'houseInfo',
   components: {
     Footer
   },
@@ -39,10 +39,10 @@ export default {
     return {
       houseInfos: info.houseInfos,
       isMobile
-    };
+    }
   },
   methods: {}
-};
+}
 </script>
 
 <style lang="sass" scoped>
@@ -62,7 +62,7 @@ $c: #9FD9F6
     img
       width: 100%
 .msg
-  font: 
+  font:
     size: calc(25 * 100vw / 1920)
 
 .msg_title
@@ -71,7 +71,7 @@ $c: #9FD9F6
   color: $c
   font-family: $family3
   text-align: left
-  font: 
+  font:
     size: 1.4em
 
 .info
@@ -91,7 +91,6 @@ $c: #9FD9F6
   white-space: nowrap
   border-bottom: solid 1px $c
   padding: 0.6em 0
-  
 
   &:nth-of-type(even)
     margin-right: 0
@@ -140,8 +139,7 @@ $c: #9FD9F6
 
     .label, .desc
       font:
-       size: calc(12 * 100vw / 375)  
-
+       size: calc(12 * 100vw / 375)
 
 /* 平板尺寸 */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
@@ -157,7 +155,6 @@ $c: #9FD9F6
 
 // 避免內容電腦過渡平板時，設計未考量的調整
 @media only screen and (min-width: 1025px) and (max-width: 1199.98px)
-
 
 // ====================================
 // == MY
@@ -203,7 +200,6 @@ $c: #9FD9F6
       padding-right: 2vw
       width: 11vw
 
-    
     a:last-child
       padding-right: 0vw
   .logo_logo

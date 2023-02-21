@@ -55,8 +55,7 @@
     &:nth-child(7), &:nth-child(14), &:nth-child(21)
       background-image: url('./S4/7.jpg')
 
-
-@media screen and (max-width: $bp-mb)  
+@media screen and (max-width: $bp-mb)
 
   .swiper-slide
     background:
@@ -78,7 +77,7 @@
     &:nth-child(6), &:nth-child(13), &:nth-child(20)
       background-image: url('./S4/1.jpg')
     &:nth-child(7), &:nth-child(14), &:nth-child(21)
-      background-image: url('./S4/2.jpg')  
+      background-image: url('./S4/2.jpg')
 
 // 總高
 @media screen and (min-width: $bp-pc)
@@ -111,7 +110,7 @@
   display: flex
   flex-direction: column
 .box
-  
+
 .box_item
   position: relative
 .box_text
@@ -179,7 +178,7 @@
 .text
   color: #fff
   line-height: 1.5
-  font: 
+  font:
     size: calc(12 * 100vw / 375)
 .text1
   font:
@@ -198,7 +197,7 @@
     width: 80vw
     margin: 2vw auto
     line-height: 1.7
-    font: 
+    font:
       size: calc(20 * 100vw / 1920)
   .text1
     width: 50%
@@ -220,7 +219,7 @@
 
 @media screen and (max-width: $bp-mb)
   .text
-    
+
   .text1
     margin-bottom: 2vw
     span

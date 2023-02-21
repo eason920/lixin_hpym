@@ -97,7 +97,7 @@ $g: 5px
   display: flex
   color: #fff
   line-height: 1.5
-  font: 
+  font:
     size: calc(12 * 100vw / 375)
   h2
     font:
@@ -155,7 +155,7 @@ $g: 5px
   #sec3
     padding: 3vw 10vw 5vw
     line-height: 1.7
-    font: 
+    font:
       size: calc(20 * 100vw / 1920)
 
     h2
@@ -237,36 +237,35 @@ export default {
   created() {},
 
   mounted() {
-    const target0 = $(".group0");
-    const target1 = $(".group1");
-    const target2 = $(".group2");
-    const target3 = $(".group3");
-    const target4 = $(".group4");
-    let offset0 = 0;
-    let offset1 = 0;
-    let offset2 = 0;
-    let offset3 = 0;
-    let offset4 = 0;
+    const target0 = $('.group0')
+    const target1 = $('.group1')
+    const target2 = $('.group2')
+    const target3 = $('.group3')
+    const target4 = $('.group4')
+    let offset0 = 0
+    let offset1 = 0
+    let offset2 = 0
+    let offset3 = 0
+    let offset4 = 0
     setTimeout(() => {
-      offset0 = target0.offset().top;
-      offset1 = target1.offset().top;
-      offset2 = target2.offset().top;
-      offset3 = target3.offset().top;
-      offset4 = target4.offset().top;
-      action();
-    }, 3000);
-    const action = ()=> {
-      const scrollTop = $(window).scrollTop() + $(window).height() - 50;
-      this.bAddClass0 = scrollTop >= offset0 ? true : false;
-      this.bAddClass1 = scrollTop >= offset1 ? true : false;
-      this.bAddClass2 = scrollTop >= offset2 ? true : false;
-      this.bAddClass3 = scrollTop >= offset3 ? true : false;
-      this.bAddClass4 = scrollTop >= offset4 ? true : false;
+      offset0 = target0.offset().top
+      offset1 = target1.offset().top
+      offset2 = target2.offset().top
+      offset3 = target3.offset().top
+      offset4 = target4.offset().top
+      action()
+    }, 3000)
+    const action = () => {
+      const scrollTop = $(window).scrollTop() + $(window).height() - 50
+      this.bAddClass0 = scrollTop >= offset0
+      this.bAddClass1 = scrollTop >= offset1
+      this.bAddClass2 = scrollTop >= offset2
+      this.bAddClass3 = scrollTop >= offset3
+      this.bAddClass4 = scrollTop >= offset4
     }
     $(window).scroll(() => {
-      action();
-    });
-
+      action()
+    })
   },
 
   computed: {}

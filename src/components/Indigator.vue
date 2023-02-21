@@ -79,7 +79,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efcc7d', end
     position: absolute;
     bottom: 0;right: 0;
     width:100%;}
-    &:hover{     
+    &:hover{
     color: #000;
     }
     &::before {

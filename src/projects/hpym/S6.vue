@@ -118,10 +118,10 @@ export default {
               .removeClass('active')
               .eq(eq)
               .addClass('active')
-            if( eq === 3 ) {
-              $(".m_msg").css("opacity", 0)
+            if (eq === 3) {
+              $('.m_msg').css('opacity', 0)
             } else {
-              $(".m_msg").css("opacity", 1)
+              $('.m_msg').css('opacity', 1)
             }
           }
         }
@@ -183,7 +183,7 @@ export default {
   margin: 0 auto
   color: #fff
   line-height: 1.5
-  font: 
+  font:
     size: calc(12 * 100vw / 375)
   h2
     font:
@@ -200,7 +200,7 @@ export default {
     display: flex
     flex-wrap: wrap
     line-height: 1.7
-    font: 
+    font:
       size: calc(20 * 100vw / 1920)
     margin:
       top: 3vw
@@ -226,7 +226,7 @@ export default {
       padding-right: $g
       font:
         size: 1.63em
-      line-height:1.4 
+      line-height:1.4
     p
       padding-left: $g
       text-align: justify
@@ -343,7 +343,7 @@ export default {
   position: absolute
   width: .5em
   height: 1.55em
-  font: 
+  font:
     size: 20px
   z-index: 3
   cursor: pointer
@@ -351,7 +351,6 @@ export default {
     size: contain
   top: 50%
   transform: translateY(-50%)
-
 
 .pre
   background:
