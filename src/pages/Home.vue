@@ -21,6 +21,9 @@
       <img v-if="!isMobile" :style="pcTop1" class="wave wave_l1 waveAni" src="../projects/hpym/all/wave_l1.png" />
       <S2 />
     </vue-lazy-component>
+    <vue-lazy-component class="section" id="section0" @init="init">
+      <S0 />
+    </vue-lazy-component>
     <vue-lazy-component class="section" id="section3" @init="init">
       <!-- PC -->
       <img v-if="!isMobile" class="wave wave_r1 waveAni" :style="pcTop2" src="../projects/hpym/all/wave_r1.png" />
@@ -74,6 +77,7 @@ import Loading from '@/components/Loading.vue'
 // import Indigator from '@/components/Indigator.vue'
 // import SwiperDemo from '@/projects/hpym/swiperDemo_S7_single.vue'
 import MClose from '@/projects/hpym/MClose.vue'
+import S0 from '@/projects/hpym/S0.vue'
 import S1 from '@/projects/hpym/S1.vue'
 import S2 from '@/projects/hpym/S2.vue'
 import S3 from '@/projects/hpym/S3.vue'
@@ -94,6 +98,7 @@ export default {
     MobileNav,
     // SwiperDemo,
     MClose,
+    S0,
     S1,
     S2,
     S3,
@@ -147,7 +152,7 @@ export default {
       const fnPcTop1 = () => {
         const h = document.getElementById('section1').offsetHeight
         const st = $(window).scrollTop() + $(window).height()
-        const top = 'top:' + (h + st / 100 * -50) + 'px'
+        const top = 'top:' + (h + st / 100 * -15) + 'px'
         this.pcTop1 = top
       }
       const fnPcTop2 = () => {
@@ -268,6 +273,10 @@ export default {
   $ge: #00202C
   #section2
     background:
+      image: linear-gradient(to bottom, #000, #000)
+
+  #section0
+    background:
       image: linear-gradient(to bottom, #000, #{$ga})
 
   #section3
@@ -291,10 +300,12 @@ export default {
   $gb: #5A92AC
   $gc: #031217
   $gd: #031217
-
+  #section0
+    background:
+      image: linear-gradient(to bottom, #000 , #000)
   #section3
     background:
-      image: linear-gradient(to bottom, #000 30%, #{$ga})
+      image: linear-gradient(to bottom, #000 10%, #{$ga})
   #section4
     background:
       image: linear-gradient(to bottom, #{$ga}, #{$gb})
