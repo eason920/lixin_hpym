@@ -40,11 +40,11 @@
 </template>
 
 <script>
-import { isMobile, isTablet } from "@/utils";
-import navList from "@/info/navList";
+import { isMobile, isTablet } from '@/utils'
+import navList from '@/info/navList'
 
 export default {
-  name: "navigation",
+  name: 'navigation',
   components: {},
   data() {
     return {
@@ -52,29 +52,29 @@ export default {
       isMobile,
       isTablet,
       list: navList
-    };
+    }
   },
 
   computed: {
     offset() {
       if (this.isMobile) {
-        return -39;
+        return -39
       }
 
       if (this.isTablet) {
-        return -45;
+        return -45
       }
 
-      return -56;
+      return -56
     }
   },
 
   methods: {
     toggleSidebar() {
-      this.isOpen = !this.isOpen;
+      this.isOpen = !this.isOpen
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>

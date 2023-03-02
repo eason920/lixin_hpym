@@ -339,8 +339,6 @@ export default {
     position: fixed;
     height:auto;
 
-
-
     svg {
       color: $nav_btn_color;
     }

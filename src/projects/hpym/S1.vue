@@ -185,9 +185,9 @@ export default {
   created() {},
 
   mounted() {
-    $(".title_box,.appoint").click(()=>{
-      $("html,body").animate({scrollTop: $("#contact").offset().top}, 1000);
-    });
+    $('.title_box,.appoint').click(() => {
+      $('html,body').animate({ scrollTop: $('#contact').offset().top }, 1000)
+    })
   },
   computed: {}
 }

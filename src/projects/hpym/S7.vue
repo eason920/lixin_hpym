@@ -58,7 +58,7 @@
             data-aos="fade-up"
             data-aos-delay="0"
             data-aos-duration="800"
-          >宏觀建築 專鑄經典 <br 
+          >宏觀建築 專鑄經典 <br
             v-if="isMobile" />日本三井不動產指定合作</h2>
           <p
             data-aos-once="false"
@@ -182,7 +182,7 @@ $g: 15px
 .text
   color: #fff
   line-height: 1.5
-  font: 
+  font:
     size: calc(12 * 100vw / 375)
   h2
     font:
@@ -200,7 +200,7 @@ $g: 15px
     flex-wrap: wrap
     margin: 3vw 0
     line-height: 1.7
-    font: 
+    font:
       size: calc(20 * 100vw / 1920)
     &:after
       content: ""
@@ -223,7 +223,7 @@ $g: 15px
       padding-right: $g
       font:
         size: 1.63em
-      line-height:1.4 
+      line-height:1.4
     p
       padding-left: $g
       text-align: left

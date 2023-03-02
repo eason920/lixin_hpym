@@ -1,25 +1,23 @@
 <template>
   <div class="relative">
-    <section id="sec4">
+    <section id="sec0">
       <div class="title"
         data-aos-once="false"
         data-aos="fade-in"
         data-aos-delay="0"
         data-aos-duration="800"
       >
-        <img src="./S4/title.png" />
-      </div>
-      <div class="text">
-        <div class="text1"><span>頂級醫療 國際學校</span> <span>新富生活 等高對位</span></div>
-        <div class="text2">
-          鄰近新光、榮總、振興、陽明、和信…匯聚頂尖醫療資源就近守護；歐洲學校、美國學校、日僑學校…文教優質環境，等高對位新富貴族生活質地。
-        </div>
+        <img src="./S0/title.png" />
       </div>
       <div class="box">
         <swiper :options="swiperOptions">
           <swiper-slide v-for="(item, i) in swipList" :key="'box' + i">
-            <div class="box_item">
-              <div class="box_text">{{ item }}</div>
+            <div target="news" class="box_item">
+              <div class="box_mask"></div>
+              <div class="box_from">{{ item.from }}</div>
+              <div class="box_text"><span>{{ item.msg }}</span></div>
+              <div class="box_read">READ NEWS</div>
+              <a :href="item.link" target="_blank" class="box_link"></a>
             </div>
           </swiper-slide>
         </swiper>
@@ -38,22 +36,20 @@
       position: center
       size: cover
     &:nth-child(1), &:nth-child(8), &:nth-child(15)
-      background-image: url('./S4/1.jpg')
+      background-image: url('./S0/6.jpg')
 
     &:nth-child(2), &:nth-child(9), &:nth-child(16)
-      background-image: url('./S4/2.jpg')
+      background-image: url('./S0/5.jpg')
 
     &:nth-child(3), &:nth-child(10), &:nth-child(17)
-      background-image: url('./S4/3.jpg')
+      background-image: url('./S0/4.jpg')
 
     &:nth-child(4), &:nth-child(11), &:nth-child(18)
-      background-image: url('./S4/4.jpg')
+      background-image: url('./S0/3.jpg') 
     &:nth-child(5), &:nth-child(12), &:nth-child(19)
-      background-image: url('./S4/5.jpg')
+      background-image: url('./S0/2.jpg')
     &:nth-child(6), &:nth-child(13), &:nth-child(20)
-      background-image: url('./S4/6.jpg')
-    &:nth-child(7), &:nth-child(14), &:nth-child(21)
-      background-image: url('./S4/7.jpg')
+      background-image: url('./S0/1.jpg')
 
 @media screen and (max-width: $bp-mb)
 
@@ -62,22 +58,20 @@
       position: center
       size: cover
     &:nth-child(1), &:nth-child(8), &:nth-child(15)
-      background-image: url('./S4/3.jpg')
+      background-image: url('./S0/4.jpg')
 
     &:nth-child(2), &:nth-child(9), &:nth-child(16)
-      background-image: url('./S4/4.jpg')
+      background-image: url('./S0/3.jpg')
 
     &:nth-child(3), &:nth-child(10), &:nth-child(17)
-      background-image: url('./S4/5.jpg')
+      background-image: url('./S0/2.jpg')
 
     &:nth-child(4), &:nth-child(11), &:nth-child(18)
-      background-image: url('./S4/6.jpg')
-    &:nth-child(5), &:nth-child(12), &:nth-child(19)
-      background-image: url('./S4/7.jpg')
+      background-image: url('./S0/1.jpg')
     &:nth-child(6), &:nth-child(13), &:nth-child(20)
-      background-image: url('./S4/1.jpg')
+      background-image: url('./S0/6.jpg')
     &:nth-child(7), &:nth-child(14), &:nth-child(21)
-      background-image: url('./S4/2.jpg')
+      background-image: url('./S0/5.jpg')
 
 // 總高
 @media screen and (min-width: $bp-pc)
@@ -104,54 +98,104 @@
 // --------------------------------
 // -- 我內部介面
 // --------------------------------
-#sec4
+#sec0
   position: relative
   z-index: 10
   display: flex
   flex-direction: column
+
+%masker
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
 .box
 
 .box_item
   position: relative
-.box_text
-  font:
-    size: 1vw
-    family: "Noto Sans TC" !important
-    size: calc(12 * 100vw / 375)
+
+.box_mask
+  @extend %masker
+  background-color: #000
+  opacity: .5
+.box_from
   position: absolute
-  width: 100%
-  bottom: 0
+  top: 15px
+  left: 18px
+  font:
+    size: 16px
+    weight: ligther
+    family: "Noto Sans TC" !important
+  letter-spacing: 1px
+  color: #9FD9F6
+.box_text
+  bottom: 40px
+  position: absolute
+  width: 90%
+  left: 5%
   color: #fff
-  background: rgba(0,0,0,.5)
+  background: rgba(1,17,28,.8)
   display: flex
   align-items: center
   justify-content: center
-
+  padding: 8px 10px
+  span
+    text:
+      align: left
+    font:
+      size: 20px
+      family: "Noto Sans TC" !important
+      weight: lighter
+    line-height: 1.4
+    letter-spacing: 1px
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    overflow: hidden
+.box_read
+  color: #9FD9F6
+  font:
+    size: 16px
+    weight: bold
+    family: "Noto Sans TC" !important
+  text-decoration: none
+  position: absolute
+  bottom: 15px
+  right: 6%
+  text-shadow: black 0 0 5px, black 0 0 5px, black 0 0 5px
+.box_link
+  @extend %masker
 @media screen and (min-width: $bp-pc)
-  #sec4
+  #sec0
 
   .box
     margin:
       left: 10vw
-      bottom: 6vw
+      bottom: 11vw
     width: 90vw
+  .box_item:hover
+    .box_mask
+      transition: .3s
+      opacity: 0
+  .box_mask
+    // @extend %masker
   .box_text
-    height: 36px
-    font:
-      size: calc(20 * 100vw / 1920)
+    // height: 36px
+  .box_link
+    top: 18vw
 
 @media screen and (max-width: $bp-mb)
   .box
     width: 120vw
     margin:
       left: -2vw
-    order: 1
-  .title
     order: 2
-  .text
-    order: 3
+  .title
+    order: 1
   .box_text
-    height: 22px
+    // height: 22px
 
 // --------------------------------
 // --title
@@ -163,76 +207,16 @@
 
 @media screen and (min-width: $bp-pc)
   .title
-    width: 45vw
-    margin-top: 3vw
+    width: 41vw
+    margin:
+      bottom: 3vw
 @media screen and (max-width: $bp-mb)
   .title
     width: 80vw
     margin:
-      top: 7vw
+      top: 18vw
       bottom: 5vw
 
-// --------------------------------
-// -- text
-// --------------------------------
-.text
-  color: #fff
-  line-height: 1.5
-  font:
-    size: calc(12 * 100vw / 375)
-.text1
-  font:
-    size: 1.25em
-    weight: 600
-
-.text2
-  font:
-    family: "Noto Sans TC" !important
-    weight: 300
-@media screen and (min-width: $bp-pc)
-  $g: 1.5vw
-  .text
-    display: flex
-    flex-direction: row
-    width: 80vw
-    margin: 2vw auto
-    line-height: 1.7
-    font:
-      size: calc(20 * 100vw / 1920)
-  .text1
-    width: 50%
-    border-right: solid 1px #fff
-    text-align: right
-    padding: 1.5vw 0
-    padding-right: $g
-    font:
-      size: 1.63em
-    span
-      letter-spacing: .2vw
-  .text2
-    width: 50%
-    padding-left: $g
-    text-align: justify
-    font-size: 1vw
-    display: flex
-    align-items: center
-
-@media screen and (max-width: $bp-mb)
-  .text
-
-  .text1
-    margin-bottom: 2vw
-    span
-      display: block
-      text-align: center
-      line-height: 1.5
-      letter-spacing: .06em
-  .text2
-    text-align: center
-    width: 80vw
-    margin: 0 auto
-    margin:
-      bottom: 10vw
 </style>
 
 <script>
@@ -254,13 +238,12 @@ export default {
       isTablet,
       bIsOpen: false,
       swipList: [
-        '日僑學校',
-        '歐洲學校',
-        '陽明醫院',
-        '振興醫院',
-        '新光醫院',
-        '榮民總醫院',
-        '美國學校'
+        {from: '#中央社', msg: '6「北士科」台北市最後大型重劃區 明眼人的價值出手！', link: 'https://www.cna.com.tw/Postwrite/Chi/333239?fbclid=IwAR1m9hysdHqW7rMYn01b_HIdCji5FHyFmAQytZTAGz_2wIYQtmSlKey7lss'},
+        {from: '#Yahoo新聞', msg: '5兼具市中心機能＆重劃區潛力 北市未來就看北士科', link: 'https://tw.news.yahoo.com/%E5%85%BC%E5%85%B7%E5%B8%82%E4%B8%AD%E5%BF%83%E6%A9%9F%E8%83%BD%EF%BC%86%E9%87%8D%E5%8A%83%E5%8D%80%E6%BD%9B%E5%8A%9B-%E5%8C%97%E5%B8%82%E6%9C%AA%E4%BE%86%E5%B0%B1%E7%9C%8B%E5%8C%97%E5%A3%AB%E7%A7%91-055201258.html'},
+        {from: '#工商時報', msg: '4北士科純住宅供給量低 賣一戶少一戶 更彰顯珍貴價值', link: 'https://ctee.com.tw/industrynews/building/788789.html'},
+        {from: '#Yahoo新聞', msg: '3房市焦點 「北士科」建設話題超越東西區', link: 'https://tw.news.yahoo.com/news/%E6%88%BF%E5%B8%82%E7%84%A6%E9%BB%9E-%E3%80%8C%E5%8C%97%E5%A3%AB%E7%A7%91%E3%80%8D%E5%BB%BA%E8%A8%AD%E8%A9%B1%E9%A1%8C%E8%B6%85%E8%B6%8A%E6%9D%B1%E8%A5%BF%E5%8D%80-102844312.html'},
+        {from: '#經濟日報', msg: '2北士科全面主導 大台北未來20年願景', link: 'https://money.udn.com/money/story/5638/6851449'},
+        {from: '#工商時報', msg: '1台北未來20年定錨「北投士林科技園區」', link: 'https://ctee.com.tw/industrynews/building/776280.html'},
       ],
       swiperOptions: {
         breakpoints: {
