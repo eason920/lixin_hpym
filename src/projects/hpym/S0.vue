@@ -86,7 +86,7 @@
   .swiper-wrapper,
   .swiper-slide,
   .box_item
-    height: 50vw
+    height: 60vw
 
 @media screen and (max-width: $bp-mb) and (orientation: landscape)
   .swiper-container,
@@ -190,8 +190,10 @@
   .box
     width: 120vw
     margin:
-      left: -2vw
+     // left: -2vw
     order: 2
+    & > div
+      padding-left: calc(14vw + 10px)
   .title
     order: 1
 
@@ -274,8 +276,8 @@ export default {
           },
           // when window width is >= 640px
           0: {
-            slidesPerView: 2,
-            spaceBetween: 20
+            slidesPerView: 1.5,
+            spaceBetween: 10
           }
         },
         // slidesPerView: 4.5,
