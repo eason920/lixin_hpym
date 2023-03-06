@@ -145,7 +145,7 @@
     text:
       align: left
     font:
-      size: 20px
+      size: 18px
       family: "Noto Sans TC" !important
       weight: lighter
     line-height: 1.4
@@ -158,7 +158,7 @@
   color: #9FD9F6
   font:
     size: 16px
-    weight: bold
+    weight: 400
     family: "Noto Sans TC" !important
   text-decoration: none
   position: absolute
